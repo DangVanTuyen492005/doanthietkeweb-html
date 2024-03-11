@@ -1,0 +1,273 @@
+@import url("Giới\ thiệu.html");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+}
+
+.grid{
+    max-width: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    border: 0;
+    font-family: Arial, sans-serif;
+    align-items: center;
+}
+
+
+header {
+    height: 62px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    position: relative;
+    float: left;
+    top: 0;
+    padding-left: 0px;
+    
+}
+
+.btn ul { 
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    padding-top: 26px;
+    padding-left: 100px;
+    padding-right: 400px;
+    
+}
+
+.btn li {
+    display: flex;
+}
+
+.btn li:hover {
+    color: red;
+}
+
+.btn a {
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn a::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: rgb(40, 107, 153);
+    border-radius: 5px;
+    transform: translateY(8px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.btn a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.search {
+    float: right;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    top: -32px;
+    margin-right: 0px;
+
+}
+
+.search p {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 7px;
+}
+
+.search .searchlogo {
+    position: relative;
+    left: 36px;
+    top: 2px;
+}
+
+.search .srh:focus {
+    outline: none;
+}
+
+.star {
+    max-width: 1200px;
+}
+
+.h1 {
+    clear: both;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.btn-1 {
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+
+.khungvien {
+    position: relative;
+    top: -10px;
+    padding-bottom: 48px;
+}
+
+.idme p {
+    clear: both;
+    padding: 8px;
+    margin-left: 140px;
+}
+
+.idme p a {
+    color: blue;
+}
+
+.idme p a:hover {
+    color: red;
+}
+
+.me {
+    max-width: 1200px;
+    position: relative;
+    left: 200px;
+    padding-top: 12px;
+}
+
+.me img {
+    border-radius: 10px;
+    border: 1px solid rgb(155, 153, 153);
+    box-shadow: 5px 5px 10px;
+    transition: all 0.45s ease;
+}
+
+.me img:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+   
+    background: #1a1a1a;
+    border-top: 1px solid #ebebeb;
+    color: #f8f8f8;
+    clear: both;
+}
+
+.ent-full {
+    width: 100%;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.infooter {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    left: -20px;
+}
+
+.colfooter {
+    float: left;
+    position: relative;
+    padding-left: 20px;
+    width: 280px;
+}
+
+.colfooter.col3 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    width: 320px;
+    float: left;
+    padding-left: 40px;
+}
+
+.colfooter.col4 {
+    display: block;
+    position: relative;
+    float: left;
+    padding-left: 60px;
+}
+
+.colfooter h4 {
+    font-size: 16px;
+    color: #fdaf17;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+.colfooter p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.colfooter p:hover {
+    color: #fdaf17;
+}
+
+
+a {
+    color: inherit;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.colfooter.col3 p:nth-child(2):before, .colfooter.col3 p:nth-child(4):before, .colfooter.col3 p:nth-child(7):before, .colfooter.col3 p:nth-child(9):before, .colfooter.col3 p:nth-child(11):before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+
+.iconsocial-facebook {
+    background-position: 0 0;
+    width: 27px;
+    height: 27px;
+}
+
+.iconfooter-facebook p img{
+    background-position: 0 0;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: -30px;
+    left: 65px;
+}
+
+.footer-end {
+    clear: both;
+    position: relative;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #ffecc1;
+    
+}

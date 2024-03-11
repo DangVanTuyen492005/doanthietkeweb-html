@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="grid">
+
+        <header class="eat-container">
+    
+            <div class="logo">
+                <a href="Trang chủ.html"><img width="140px;" src="images/logo.png" alt=""></a>
+            </div>
+    
+            <div class="btn ">
+                <ul>
+                    <li><a href="Trang chủ.html">Trang chủ</a></li>
+                    <li><a href="Giới thiệu.html">Giới thiệu</a></li>
+                    <li><a href="Sản phẩm.html">Sản phẩm</a></li>
+                    <li><a href="Liên hệ.html">Liên hệ</a></li>
+                    
+                </ul>
+            </div>  
+    
+            <div class="search">
+                <p class="searchlogo"><box-icon name='search' rotate='90' color='rgba(0,0,0,0.73)' ></box-icon></p>
+                <input class="srh" type="search" placeholder="Tìm sản phẩm theo tên, hãng..." style="width: 240px; padding-left: 40px; font-size: 12px;">
+                <p><a href="#"><box-icon name='cart' color='rgba(0,0,0,0.73)' ></box-icon></a></p>
+                <p><a href="#"><box-icon name='user'></box-icon></a></p>
+            </div> 
+    
+        </header>
+    <div class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close-outline"></ion-icon>
+        </span>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input style="outline: none;" type="Email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btt">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#"></a></p>
+                    <a href="#" class="register-link">Register</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                    <input type="text" required>
+                    <label>User-Name</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                    <input type="Email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btt">Register</button>
+                <div class="login-register">
+                    <p>Already have an account?<a href="#"></a></p>
+                    <a href="#" class="login-link">Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+        <div class="slide-container ">
+            <div class="slides">
+                <img src="images/banner.jpg" alt="" class="active">
+                <img src="images/BANNER1.jpg" alt="">
+                <img src="images/banner2.jpg" alt="">
+                <img src="https://wscdn.vn/upload/original-image/2211-BLACK-GiAM-thang-12.jpg" alt="">
+                <img src="https://wscdn.vn/upload/original-image/2612-Bonest-Gatti-2.jpg" alt="">
+            </div>
+    
+            <div class="buttons">
+                <span class="next">&#10095;</span>
+                <span class="prev">&#10094;</span>
+            </div>
+    
+            <div class="dotsContainer">
+                <div class="dot active" attr='0' onclick="switchImage(this)"></div> 
+                <div class="dot" attr='1' onclick="switchImage(this)"></div>
+                <div class="dot" attr='2' onclick="switchImage(this)"></div>
+                <div class="dot" attr='3' onclick="switchImage(this)"></div>
+                <div class="dot" attr='4' onclick="switchImage(this)"></div>
+            </div>
+        </div>
+
+        <div class="marquee">
+            <marquee>
+                Nhân dịp tri ân Quốc tế Phụ nữ ngày 8/3. Hàng loạt các sản phẩm đều được giảm đến tận 50%. Các anh các chồng còn chần chờ gì nữa mà không mua cho vợ, người yêu mình một chiếc để cùng " SAMRTTIME GENUINEWATCH " tri ân ngày Quốc Tế nào 😍🥰😍🥰!!!  
+            </marquee>
+        </div>
+        <div class="ent-container">
+            <div class="khung ent-flex ut_section ent-flex">
+                <div class="item ">
+                    <div class="img_ut">
+                        <div class="ut_img">
+                            <img class="ut-img" src="https://wscdn.vn/upload/original-image/icon-watch-home.svg" alt="">
+                        </div>
+                        <div class="txt_ut">
+                            <h4>Mẫu mã đa dạng</h4>
+                            <p>Hoàn tiền 20 lần nếu phát hiện hàng giả</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img_ut">
+                        <div class="ut_img">
+                            <img class="ut-img" src="https://wscdn.vn/upload/original-image/icon-freeship.svg" alt="">
+                        </div>
+                        <div class="txt_ut">
+                            <h4>Miễn phí vận chuyển</h4>
+                            <p>Giao hàng nhanh, đóng gói cẩn thận</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img_ut">
+                        <div class="ut_img">
+                            <img class="ut-img" src="https://wscdn.vn/upload/original-image/icon-doi-tra.svg" alt="">
+                        </div>
+                        <div class="txt_ut">
+                            <h4>Đối kháng 7 ngày</h4>
+                            <p>1 đổi 1 trong 7 ngày bởi sản phẩm lỗi</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img_ut">
+                        <div class="ut_img">
+                            <img class="ut-img" src="https://wscdn.vn/upload/original-image/ShieldCheck.svg" alt="">
+                        </div>
+                        <div class="txt_ut">
+                            <h4>Bảo hành 5 năm</h4>
+                            <p>Thụ tục nhanh gọn, thay pin miễn phí</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="item">
+                    <div class="img_ut">
+                        <div class="ut_img">
+                            <img class="ut-img" src="https://wscdn.vn/upload/original-image/CircleWavyCheck.svg" alt="">
+                        </div>
+                        <div class="txt_ut">
+                            <h4>Đeo trước trả sau</h4>
+                            <p>Trả trước 1 phần, 2 phần còn lại trả sau</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="ent-container spkm">
+                <div class="ent-product">
+                    <div class="ent-flex-nospace ent-heading">
+                        <!-- quảng cáo -->
+                        <div class="bg_km_deskop">
+                            <img class="bg_km_deskop_img ls-is-cached lazyloaded" width="1200" height="120" src="https://wscdn.vn/upload/original-image/Banner-1200x120.png" alt="">
+                        </div>
+                    </div>
+                        <!-- sản phẩm -->
+                    <div class="padding-pro owl-carousel owl-theme owl-loaded owl-drag">
+                        <div class="owl-stage-outer owl-height">
+                            <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1200px;">
+                                <div class="owl-item active" style="width: 228px; margin-right: 10px;">
+                                    <a class="item ent-card width-a" href="Sản phẩm.html">
+                                        <div class="tkku">
+                                            <img class="tkku_img ls-is-cached lazyloaded" alt="Olym Pianus OP990-45ADGS-GL-D " width="400" height="400" src="https://wscdn.vn/400x400/upload/original-image/uploads/collection1/OP990-45ADGS-GL-D-1-1655171691816.jpg" data-srcset="https://wscdn.vn/400x400/upload/image/uploads/collection1/OP990-45ADGS-GL-D-1-1655171691816.webp" data-src="https://wscdn.vn/400x400/upload/original-image/uploads/collection1/OP990-45ADGS-GL-D-1-1655171691816.jpg" srcset="https://wscdn.vn/400x400/upload/image/uploads/collection1/OP990-45ADGS-GL-D-1-1655171691816.webp" alt="404">
+                                        </div>
+                                        <h3 class="nd_t" title="Olym Pianus - Nam OP990-45ADGS-GL-D Size 42mm">Olym Pianus - Nam OP990-45ADGS-GL-D Size 42mm</h3>
+                                        <span class="showgia area_price">
+                                            <strong>7.040.000₫</strong>
+                                            <span class="linethough">8.800.000₫</span>
+                                            <label class="cplb-disc">-20%</label>
+                                        </span>
+                                        <div class="item-rating nd_t">
+                                            <p>
+                                                <i class='icontt-star'><img src="images/star.png" alt=""></i>
+                                                <i class='icontt-star'><img src="images/star.png" alt=""></i>
+                                                <i class='icontt-star'><img src="images/star.png" alt=""></i>
+                                                <i class='icontt-star'><img src="images/star.png" alt=""></i>
+                                                <i class='icontt-star'><img src="images/star.png" alt=""></i>
+                                                <i class='icontt-star'><img src="images/star.png" alt=""></i>
+                                            </p>
+                                            <p class="item-rating-total">9</p>
+                                        </div>                    
+                                    </a>
+                                </div>
+    
+                                <div class="owl-item active" style="width: 228px; margin-right: 10px;">
+                                    <a class="item ent-card" href="Sản phẩm.html">
+                                        <div class="tkku">
+                                            <img class="tkku_img ls-is-cached lazyloaded" alt="Olym Pianus OP990-45ADGS-GL-X" width="400" height="400" src="https://wscdn.vn/400x400/upload/original-image/uploads/collection1/OP990-45ADGS-GL-X-1-1654832217252.jpg" data-srcset="https://wscdn.vn/400x400/upload/image/uploads/collection1/OP990-45ADGS-GL-X-1-1654832217252.webp" data-src="https://wscdn.vn/400x400/upload/original-image/uploads/collection1/OP990-45ADGS-GL-X-1-1654832217252.jpg" srcset="https://wscdn.vn/400x400/upload/image/uploads/collection1/OP990-45ADGS-GL-X-1-1654832217252.webp" alt="404">
+                                        </div>
+                                        <h3 class="nd_t" title="Olym Pianus - Nam OP990-45ADGS-GL-X Size 42mm">Olym Pianus - Nam OP990-45ADGS-GL-X Size 42mm</h3>
+                                        <span class="showgia area_price">
+                                            <strong>7.040.000₫</strong>
+                                            <span class="linethough">8.800.000₫</span>
+                                            <label class="cplb-disc">-20%</label>
+                                        </span>
+                                        <div class="item-rating nd_t">
+                                            <p>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                                
+                                            </p>
+                                            <p class="item-rating-total">4</p>
+                                        </div>                    
+                                    </a>
+                                </div>
+                                <div class="owl-item active" style="width: 228px; margin-right: 10px;">
+                                    <a class="item ent-card" href="Sản phẩm.html">
+                                        <div class="tkku">
+                                            <img class="tkku_img lazyloaded" alt="Olym Pianus OP990-45ADGS-GL-T " width="400" height="400" src="https://wscdn.vn/upload/image/OP990-45ADGS-GL-T-1-1131812509-1619214585.jpg"  data-src="https://wscdn.vn/upload/image/OP990-45ADGS-GL-T-1-1131812509-1619214585.jpg" alt="404">
+                                        </div>
+                                        <h3 class="nd_t" title="Olym Pianus - Nam OP990-45ADGS-GL-T Size 42mm">Olym Pianus - Nam OP990-45ADGS-GL-T Size 42mm</h3>
+                                        <span class="showgia area_price">
+                                            <strong>7.040.000₫</strong>
+                                            <span class="linethough">8.800.000₫</span>
+                                            <label class="cplb-disc">-20%</label>
+                                        </span>
+                                        <div class="item-rating nd_t">
+                                            <p>
+                                                <i class="icontt-star"><img src="images/star.png"></i>
+                                                <i class="icontt-star"><img src="images/star.png"></i>
+                                                <i class="icontt-star"><img src="images/star.png"></i>
+                                                <i class="icontt-star"><img src="images/star.png"></i>
+                                                <i class="icontt-star"><img src="images/star.png"></i>
+                                            </p>
+                                            <p class="item-rating-total">4</p>
+                                        </div>                    
+                                    </a>
+                                </div>
+    
+                                <div class="owl-item active" style="width: 228px; margin-right: 10px;">
+                                    <a class="item ent-card" href="Sản phẩm.html">
+                                        <div class="tkku">
+                                            <img class="tkku_img lazyloaded" alt="Olym Pianus OP89322AGSR-N" width="400" height="400" src="https://wscdn.vn/400x400/upload/original-image/OP89322AGSR-N-1.jpg" data-src="https://wscdn.vn/400x400/upload/original-image/OP89322AGSR-N-1.jpg" alt="404">
+                                        </div>
+                                        <h3 class="nd_t" title="Olym Pianus - Nam OP89322AGSR-N Size 40mm">Olym Pianus - Nam OP89322AGSR-N Size 40mm</h3>
+                                        <span class="showgia area_price">
+                                            <strong>5.520.000₫</strong>
+                                            <span class="linethough">6.900.000₫</span>
+                                            <label class="cplb-disc">-20%</label>
+                                        </span>
+                                        <div class="item-rating nd_t">
+                                            <p>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                            </p>
+                                            <p class="item-rating-total">4</p>
+                                        </div>                    
+                                    </a>
+                                </div>
+    
+                                <div class="owl-item active" style="width: 228px; margin-right: 10px;">
+                                    <a class="item ent-card" href="Sản phẩm.html">
+                                        <div class="tkku">
+                                            <img class="tkku_img lazyloaded" alt="Orient - Nam RA-AA0B02R19B Size 41.7mm " width="400" height="400" src="https://wscdn.vn/upload/image/RA-AA0B02R19B-2081811590-287106387.jpg" data-src="https://wscdn.vn/upload/image/RA-AA0B02R19B-2081811590-287106387.jpg" alt="404">
+                                        </div>
+                                        <h3 class="nd_t" title="Orient - Nam RA-AA0B02R19B Size 41.7mm">Orient - Nam RA-AA0B02R19B Size 41.7mm</h3>
+                                        <span class="showgia area_price">
+                                            <strong>5.460.000₫</strong>
+                                            <span class="linethough">7.800.000₫</span>
+                                            <label class="cplb-disc">-30%</label>
+                                        </span>
+                                        <div class="item-rating nd_t">
+                                            <p>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                                <i class="icontt-star"><img src="images/star.png" alt=""></i>
+                                            </p>
+                                            <p class="item-rating-total">17</p>
+                                        </div>                    
+                                    </a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="xtkm" href="Sản phẩm.html">Xem đồng hồ xả kho</a>
+                </div>
+            </div>
+
+            <div class="ent-container">
+                <div class="mt_vn">
+                    <h2>CHỌN ĐỒNG HỒ PHÙ HỢP</h2>
+                    <p>WatchStore cung cấp đa dạng mẫu đồng hồ theo nhiều phong cách khác nhau</p>
+                </div>
+
+                <div class="ent-body-1 owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer owl-height" style="height: auto;">
+                        <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1200px;">
+                            <div class="owl-item-2 active" style="width: 230px; margin-right: 10px; height: 320px;">
+                                <div class="item_ss">
+                                    <a class="ent-2-more" href="Sản phẩm.html">
+                                        <div class="utt_image">
+                                            <img class="utt-image_img ls-is-cached lazyloaded" alt="Đồng hồ nam" width="220" height="120" src="https://wscdn.vn/upload/original-image/collection-nam.jpeg" srcset="https://wscdn.vn/upload/image/collection-nam.webp">
+                                        </div>
+                                        <h4>Đồng Hồ Nam</h4>
+                                    </a>
+                                    <a class="ent-2-more" href="#">
+                                        <div class="utt_image">
+                                            <img class="utt-image_img ls-is-cached lazyloaded" alt="Đồng hồ cơ" width="220" height="120" src="https://wscdn.vn/upload/original-image/collection-co.jpeg" srcset="https://wscdn.vn/upload/image/collection-co.webp">
+                                        </div>
+                                        <h4>Đồng Hồ Cơ</h4>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div class="owl-item-2 active" style="width: 230px; margin-right: 10px; height: 320px;">
+                                <div class="item_ss">
+                                    <a class="ent-2-more" href="Sản phẩm.html">
+                                        <div class="utt_image">
+                                            <img class="utt-image_img ls-is-cached lazyloaded" alt="Đồng hồ nữ" width="220" height="120" src="https://wscdn.vn/upload/original-image/collection-nu.jpeg" srcset="https://wscdn.vn/upload/image/collection-nu.webp">
+                                        </div>
+                                        <h4>Đồng Hồ Nữ</h4>
+                                    </a>
+                                    <a class="ent-2-more" href="#">
+                                        <div class="utt_image">
+                                            <img class="utt-image_img ls-is-cached lazyloaded" alt="Đồng hồ Nhật Bản" width="220" height="120" src="https://wscdn.vn/upload/original-image/collection-nhat-ban.jpeg" srcset="https://wscdn.vn/upload/image/collection-nhat-ban.webp">
+                                        </div>
+                                        <h4>Đồng Hồ Nhật Bản</h4>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="owl-item-2 active" style="width: 230px; margin-right: 10px; height: 320px;">
+                                <div class="item_ss">
+                                    <a class="ent-2-more" href="#">
+                                        <div class="utt_image">
+                                            <img class="utt-image_img ls-is-cached lazyloaded" alt="Đồng hồ Thụy Sĩ" width="220" height="120" src="https://wscdn.vn/upload/original-image/collection-thuy-sy.jpeg" data-srcset="https://wscdn.vn/upload/image/collection-thuy-sy.webp" data-src="https://wscdn.vn/upload/original-image/collection-thuy-sy.jpeg" srcset="https://wscdn.vn/upload/image/collection-thuy-sy.webp">
+                                        </div>
+                                        <h4>Đồng Hồ Thụy Sĩ</h4>
+                                    </a>
+                                    <a class="ent-2-more" href="#">
+                                        <div class="utt_image">
+                                            <img class="utt-image_img ls-is-cached lazyloaded" alt="Đồng hồ Pin/Quartz" width="220" height="120" src="https://wscdn.vn/upload/original-image/collection-pin.jpeg" data-srcset="https://wscdn.vn/upload/image/collection-pin.webp" data-src="https://wscdn.vn/upload/original-image/collection-pin.jpeg" srcset="https://wscdn.vn/upload/image/collection-pin.webp">
+                                        </div>
+                                        <h4>Đồng Hồ Pin/Quartz</h4>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="owl-item-2 active" style="width: 230px; margin-right: 10px; height: 320px;">
+                                <div class="item_ss">
+                                    <a class="ent-2-more" href="#">
+                                        <div class="utt_image">
+                                            <img class="utt-image_img ls-is-cached lazyloaded" alt="Đồng hồ điện tử" width="220" height="120" src="https://wscdn.vn/upload/original-image/collection-dien-tu.jpeg" data-srcset="https://wscdn.vn/upload/image/collection-dien-tu.webp" data-src="https://wscdn.vn/upload/original-image/collection-dien-tu.jpeg" srcset="https://wscdn.vn/upload/image/collection-dien-tu.webp">
+                                        </div>
+                                        <h4>Đồng Hồ Điện Tử</h4>
+                                    </a>
+                                    <a class="ent-2-more" href="#">
+                                        <div class="utt_image">
+                                            <img class="utt-image_img ls-is-cached lazyloaded" alt="Đồng hồ dây kim loại" width="220" height="120" src="https://wscdn.vn/upload/original-image/collection-day-kim-loai.jpeg" data-srcset="https://wscdn.vn/upload/image/collection-day-kim-loai.webp" data-src="https://wscdn.vn/upload/original-image/collection-day-kim-loai.jpeg" srcset="https://wscdn.vn/upload/image/collection-day-kim-loai.webp">
+                                        </div>
+                                        <h4>Đồng Hồ Dây Kim Loại</h4>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="owl-item-2 active" style="width: 230px; margin-right: 10px; height: 320px;">
+                                <div class="item_ss">
+                                    <a class="ent-2-more" href="#">
+                                        <div class="utt_image">
+                                            <img class="utt-image_img ls-is-cached lazyloaded" alt="Đồng hồ cao cấp" width="220" height="120" src="https://wscdn.vn/upload/original-image/collection-cao-cap.jpeg" data-srcset="https://wscdn.vn/upload/image/collection-cao-cap.webp" data-src="https://wscdn.vn/upload/original-image/collection-cao-cap.jpeg" srcset="https://wscdn.vn/upload/image/collection-cao-cap.webp">
+                                        </div>
+                                        <h4>Đồng Hồ Cao Cấp</h4>
+                                    </a>
+                                    <a class="ent-2-more" href="#">
+                                        <div class="utt_image">
+                                            <img class="utt-image_img ls-is-cached lazyloaded" alt="Đồng hồ dây da" width="220" height="120" src="https://wscdn.vn/upload/original-image/collection-day-da.jpeg" data-srcset="https://wscdn.vn/upload/image/collection-day-da.webp" data-src="https://wscdn.vn/upload/original-image/collection-day-da.jpeg" srcset="https://wscdn.vn/upload/image/collection-day-da.webp">
+                                        </div>
+                                        <h4>Đồng Hồ Dây Da</h4>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ent-container">
+                <div class="mt_vn">
+                    <h2>BỘ SƯU TẦM LUXURY</h2>
+                </div>
+
+                <div class="ent-body-2 owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer owl-height" style="height: auto;">
+                        <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 2420px;">
+                            <div class="owl-item-3 active" style="width: 585px; margin-right: 10px;">
+                                <a href="#">
+                                    <div class="slide-image">
+                                        <img class="slide-image_img ls-is-cached lazyloaded" width="680" height="400"  src="https://wscdn.vn/upload/original-image/lg-luxury.png" data-srcset="https://wscdn.vn/upload/image/lg-luxury.webp" data-src="https://wscdn.vn/upload/original-image/lg-luxury.png" srcset="https://wscdn.vn/upload/image/lg-luxury.webp">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="owl-item-3 active" style="width: 585px; margin-right: 10px;">
+                                <a href="#">
+                                    <div class="slide-image">
+                                        <img class="slide-image_img ls-is-cached lazyloaded" width="680" height="400"  src="https://wscdn.vn/upload/original-image/fc-luxury-banner.jpeg" data-srcset="https://wscdn.vn/upload/image/fc-luxury-banner.webp" data-src="https://wscdn.vn/upload/original-image/fc-luxury-banner.jpeg" srcset="https://wscdn.vn/upload/image/fc-luxury-banner.webp">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="owl-item-3" style="width: 595px; height: 350px; margin-right: 10px;">
+                                <a href="#">
+                                    <div class="slide-image">
+                                        <img class="slide-image_img ls-is-cached lazyloaded" width="680" height="400"  src="https://wscdn.vn/upload/original-image/lg-giam-34-banner.png" data-srcset="https://wscdn.vn/upload/image/lg-giam-34-banner.webp" data-src="https://wscdn.vn/upload/original-image/lg-giam-34-banner.png" srcset="https://wscdn.vn/upload/image/lg-giam-34-banner.webp">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="owl-item-3" style="width: 595px; height: 350px; margin-right: 10px;">
+                                <a href="#">
+                                    <div class="slide-image">
+                                        <img class="slide-image_img ls-is-cached lazyloaded" width="680" height="400"  src="https://wscdn.vn/upload/original-image/omega-luxury-banner.jpeg" data-srcset="https://wscdn.vn/upload/image/omega-luxury-banner.webp" data-src="https://wscdn.vn/upload/original-image/omega-luxury-banner.jpeg" srcset="https://wscdn.vn/upload/image/omega-luxury-banner.webp">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ent-full bg-black">
+            <div class="ent-container img_story_ct ent-flex">
+                <div class="img_story">
+                    <img class="img_story_img ls-is-cached lazyloaded" alt="Giới thiệu WatchStore" width="600" height="447" src="https://wscdn.vn/upload/original-image/gioithieu-home-desktop.png" data-srcset="https://wscdn.vn/upload/image/gioithieu-home-desktop.webp" data-src="https://wscdn.vn/upload/original-image/gioithieu-home-desktop.png" srcset="https://wscdn.vn/upload/image/gioithieu-home-desktop.webp">
+                </div>
+
+                <div class="text_story">
+                    <div class="content_text_story">
+                        <img src="images/logo.png" alt="not Alt">
+                        <h4>Thế giới đồng hồ chính hãng</h4>
+                        <div class="p_center">
+                            <p>"Được thành lập vào năm 2020, trải qua hơn 3 năm hoạt động và phát triển, "SMART TIME GENUINE WATCH" trở thành đại lý ủy quyền cho rất nhiều thương hiệu đến từ Nhật Bản và Thụy Sỹ chuyên bán đồng hồ chính hãng"</p>
+                            <p>"Chính sách bảo hành 5 năm cùng với các chương trình giảm giá tốt sẽ giúp bạn mua sắm dễ dàng. Với đội ngũ nhân viên tận tình, am hiểu về đồng hồ, "SMART TIME GENUINE WATCH" rất vui được phục vụ quý khách"</p>
+                            <p>
+                                <a href="#">Xem thêm</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <div class="ent-full footer">
+            <div class="ent-container infooter">
+                <div class="colfooter col1">
+                    <h4>VỀ GENUINEWATCH.VN</h4>
+                    <p><a href="#">Giới thiệu công ty</a></p>
+                    <p><a href="#">Phản ánh - Khiếu nại</a></p>
+                    <p><a href="#">Chứng nhận đại lý</a></p>
+                    <p><a href="#">Tin tức công ty</a></p>
+                    <p><a href="#">Top list đồng hồ</a></p>
+                    <p><a href="#">Kiến thức đồng hồ</a></p>
+                </div>
+
+                <div class="colfooter col2">
+                    <h4>CHÍNH SÁCH CHUNG</h4>
+                    <p><a href="#">Điều khoản thanh toán</a></p>
+                    <p><a href="#">Chính sách bảo hành</a></p>
+                    <p><a href="#">Chính sách bảo mật</a></p>
+                    <p><a href="#">Chính sách vận chuyển</a></p>
+                    <p><a href="#">Chính sách đổi trả</a></p>
+                </div>
+
+                <div class="colfooter col3">
+                    <h4>CỬA HÀNG BÌNH DƯƠNG</h4>
+                    <p>LING256_Thiết kế Web (2+0)_KTCN.CQ.01_Võ Văn Lên</p>
+                    <p>Mở cửa: 7h30 - 11h30</p>
+                    <p>LING310_Thực hành thiết kế Web (0+1)_KTCN.TH.01_Võ Văn Lên</p>
+                    <p>Mở cửa: 12h30 - 17h30</p>
+                </div>
+
+                <div class="colfooter col4">
+                    <h4>LIÊN HỆ HỖ TRỢ</h4>
+                    <p>Hotline:<a href="#"> 0382754238</a></p>
+                    <p>Phản ánh: <a href="#">2324802010156@student.tdmu.edu.vn</a></p>
+
+                    <h4>KẾT NỐI VỚI CHÚNG TÔI</h4>
+                    <div class="iconfooter-facebook">
+                        <a href="https://www.facebook.com/profile.php?id=100068655444234&mibextid=2JQ9oc"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                        <p><a href="https://www.facebook.com/profile.php?id=100068655444234&mibextid=2JQ9oc"><img src="images/messenger.png" alt=""></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-end">
+            <p><font color="red">SMARTTIME GENUINEWATCH</font> Xin chân thành cảm ơn quý hàng đã ghé thăm và ủng hộ.</p>
+        </div>
+    
+
+
+
+
+
+    <script type="text/javascript">
+            const slideImages = document.querySelectorAll ('img');
+            const next = document.querySelector('.next');
+            const prev = document.querySelector('.prev');
+    
+            const dots = document.querySelectorAll('.dot');
+    
+            var counter = 0;
+    
+            next.addEventListener('click', slideNext);
+            function slideNext(){
+                slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+             if(counter >= slideImages.length-1){
+                counter = 0;
+            }
+            else {
+                counter++;
+            }
+            slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+            indicators();
+            }
+    
+            prev.addEventListener('click', slidePrev);
+            function slidePrev(){
+            slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+            if(counter == 0){
+                counter = slideImages.length-1;
+            }
+            else {
+                counter--;
+            }
+            slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
+            indicators();
+            }
+    
+            function autoSliding(){
+                deletInterval = setInterval(timer, 3000);
+                function timer(){
+                    slideNext();
+                    indicators();
+                }
+            }
+            autoSliding();
+    
+            const container = document.querySelector('.slide-container');
+            container.addEventListener('mouseover', function(){
+                clearInterval(deletInterval);   
+            });
+    
+            container.addEventListener('mouseout', autoSliding);
+            function indicators(){
+                for(i = 0; i < dots.length; i++){
+                    dots[i].className = dots[i].className.replace('active', ' ');
+                }
+                dots[counter].className += 'active';
+            }
+            function switchImage (currentImage) {
+                currentImage.classList.add('active');
+                var imageId = currentImage.getAttribute('attr');
+                if(imageId > counter){
+                slideImages[counter].style.animation = 'next1 0.5s ease-in forwards';
+                counter = imageId;
+                slideImages[counter].style.animation = 'next2 0.5s ease-in forwards';
+                }
+                else if(imageId == counter) {
+                    return;
+                }
+                else {
+                slideImages[counter].style.animation = 'prev1 0.5s ease-in forwards';
+                counter = imageId;
+                slideImages[counter].style.animation = 'prev2 0.5s ease-in forwards';
+                }
+                indicators();
+            }
+    </script>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
